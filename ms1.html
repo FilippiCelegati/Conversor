@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ms1.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <title>MS_1 - Conversor de Moedas</title>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>MS1 - Conversor de Moedas</h1>
+    </div>
+
+    <div id="container">
+        <p class="convert">Converter <strong>de:</strong> </p>
+        <select class="select">
+            <option>R$ Real Brasileiro</option>
+        </select>
+
+        <p class="convert">Converter <strong>para:</strong> </p>
+        <select class="select" id="select_moedas">
+            <option>US$ Dólar</option>
+            <option>€ Euro</option>
+        </select>
+
+        <p class="convert"><strong>Valor:</strong> </p>
+        <input id="input" placeholder="Valor" type="number">
+
+        <button id="button">Converter</button>
+
+        <div id="container_2">
+
+            <div class="cx_band">
+
+                <img src="./img/brasil.png">
+                <p class="convert">Real</p>
+                <p class="grana" id="real">R$10.000,00</p>
+
+            </div>
+
+            <div id="seta">
+                <img src="./img/seta.png">
+            </div>
+
+            <div class="cx_band">
+
+                <img id="band_eua" src="./img/estados-unidos.png">
+                <p class="convert" id="txt_moedas">Dólar Americano</p>
+                <p class="grana" id="moedas"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

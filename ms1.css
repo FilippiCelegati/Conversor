@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+*{
+     font-family: 'Roboto', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+h1{
+    color: #F4F4F4;
+    font-size: 24px;
+    text-align: center;
+}
+
+.select{
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 48px;
+    width: 327px;
+    margin-bottom: 23px;
+    appearance: none; /*serve p/ tirar a seta do input*/
+    outline: none; /*serve p/ tirar a linha selecionada da cx do input*/
+    cursor: pointer; /*serve p/ por a maozinha no lugar da seta do mouse*/
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.convert{
+   margin-bottom: 6px;
+   color: #777777;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 18px;
+}
+
+.cx_band{
+    text-align: center;
+}
+
+.grana{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#seta{
+   text-align: center;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+#input{
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 48px;
+    width: 327px;
+    margin-bottom: 23px;
+    outline: none;
+    padding-left: 16px;
+    font-size: 16px;
+}
+
+#header{
+    background-color: #9657A5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    Width: 375px;
+    Height: 56px;
+}
+
+#container{
+    background: #f3f0f0;
+    width: 375px;
+    padding: 62px 0px 16px 26px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+#button{
+    display: block;
+    background: #CDD728;
+    border-radius: 25px;
+    height: 48px;
+    width: 327px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 23px;
+    font-weight: bolder;
+    font-size: 18px;
+    color: #F4F4F4;
+    outline: none;
+}
+
+#button:active{
+    opacity: 0.6;
+}
+
+#container_2{
+    border: 1px solid #9657A5;
+    border-radius: 4px;
+    padding: 12px 0 12px 0;
+    margin-right: 30px;
+}
