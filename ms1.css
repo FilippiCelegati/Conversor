@@ -11,6 +11,7 @@ h1{
     color: #F4F4F4;
     font-size: 24px;
     text-align: center;
+    padding-top: 14px;
 }
 
 .select{
@@ -29,6 +30,10 @@ h1{
     font-weight: bold;
 }
 
+.select:hover{
+    background-color: #e2dede;
+}
+
 .convert{
    margin-bottom: 6px;
    color: #777777;
@@ -36,6 +41,7 @@ h1{
    font-size: 14px;
    line-height: 18px;
 }
+
 
 .cx_band{
     text-align: center;
@@ -71,7 +77,7 @@ h1{
     margin-right: auto;
     margin-top: 50px;
     Width: 375px;
-    Height: 56px;
+    Height: 58px;
 }
 
 #container{
