@@ -45,6 +45,13 @@ function trocaMoeda(){
     }
 
     else if(select.value === "€ Euro"){
+        txtMoedas.innerHTML = "€ Euro"
+        bandMoedas.src = "./img/euro.png"
+
+        
+    }
+
+    else if(select.value === "$ Peso"){
         txtMoedas.innerHTML = "Euros"
         bandMoedas.src = "./img/euro.png"
 
