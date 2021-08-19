@@ -6,12 +6,16 @@ let select  = document.getElementById("select_moedas")
 
 async function converterMoedas(){
 
-    let moedasAtual = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL").then( function(resposta){
+    let moedasAtual = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,PYG-BRL,ARS-BRL,CNY-BRL").then( function(resposta){
        return resposta.json()
     })
 
     let dolar = moedasAtual.USDBRL.high
     let euro = moedasAtual.EURBRL.high
+    let peso = moedasAtual.ARSBRL.high
+    let gua = moedasAtual.PYGBRL.high
+    let ren = moedasAtual.CNYBRL.high
+
     
 
     let inputReais = Number(document.getElementById("input").value)
@@ -28,6 +32,12 @@ async function converterMoedas(){
         let valorEuros = inputReais / euro
         inputMoedas.innerHTML = valorEuros.toLocaleString('de-DE', {style: 'currency', currency: 'EUR'})
     }
+
+    else if(select.value === "$ Peso"){
+        let valorPesos = inputReais / peso
+        inputMoedas.innerHTML = valorPesos.toLocaleString('nl-NL', {style: 'currency', currency: 'ARS'})
+    }
+
 
     
     inputMoedaReal.innerHTML = inputReais.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
@@ -52,8 +62,8 @@ function trocaMoeda(){
     }
 
     else if(select.value === "$ Peso"){
-        txtMoedas.innerHTML = "Euros"
-        bandMoedas.src = "./img/euro.png"
+        txtMoedas.innerHTML = "$ Peso"
+        bandMoedas.src = "./img/arg.png"
 
         
     }
