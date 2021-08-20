@@ -63,7 +63,7 @@ function trocaMoeda(){
 
     else if(select.value === "$ Peso"){
         txtMoedas.innerHTML = "$ Peso"
-        bandMoedas.src = "./img/arg.png"
+        bandMoedas.src = "./img2/arg.png"
 
         
     }
