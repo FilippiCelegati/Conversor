@@ -1,5 +1,5 @@
 
-let botao = document.getElementsById("button")
+let botao = document.getElementById("button")
 let select  = document.getElementById("select_moedas")
 
 
@@ -94,7 +94,6 @@ function trocaMoeda(){
 
     converterMoedas()
 }
-
 
 botao.addEventListener("click", converterMoedas )
 select.addEventListener("change", trocaMoeda)
