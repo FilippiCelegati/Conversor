@@ -76,7 +76,6 @@ h1{
     background-color: #2B5C50;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 4px 4px 0 0;
     margin-top: 50px;
     Width: 375px;
     Height: 58px;
@@ -85,7 +84,6 @@ h1{
 #container{
     background: #BCF5E7;
     width: 375px;
-    border-radius: 4px;
     padding: 62px 0px 16px 26px;
     margin-left: auto;
     margin-right: auto;
@@ -93,7 +91,7 @@ h1{
 }
 
 
-/*#button{
+#button{
     display: block;
     background: #566360;
     border-radius: 25px;
@@ -107,13 +105,14 @@ h1{
     color: #F4F4F4;
     outline: none;
 
+}
+
 #button:active{
     opacity: 0.6;
 }
 
-}*/
-
-.efeito{
+/*.efeito{
+    display: block;
     position: relative;
     box-sizing: border-box;
     border-radius: 25px;
@@ -148,9 +147,9 @@ h1{
     width: 100%;
 }
 
-.efeito:active{
+.efeito_opt:active{
     opacity: 0.6;
-}
+}*/
 
 
 #container_2{

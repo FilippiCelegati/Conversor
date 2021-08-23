@@ -1,5 +1,5 @@
 
-let botao = document.getElementById("button")
+let botao = document.getElementsById("button")
 let select  = document.getElementById("select_moedas")
 
 
