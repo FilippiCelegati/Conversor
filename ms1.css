@@ -31,7 +31,8 @@ h1{
 }
 
 .select:hover{
-    background-color: #e2dede;
+    background-color: #67DBBE;
+    color: #FFFFFF
 }
 
 .convert{
@@ -72,17 +73,19 @@ h1{
 }
 
 #header{
-    background-color: #9657A5;
+    background-color: #2B5C50;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 4px 4px 0 0;
     margin-top: 50px;
     Width: 375px;
     Height: 58px;
 }
 
 #container{
-    background: #f3f0f0;
+    background: #BCF5E7;
     width: 375px;
+    border-radius: 4px;
     padding: 62px 0px 16px 26px;
     margin-left: auto;
     margin-right: auto;
@@ -90,9 +93,9 @@ h1{
 }
 
 
-#button{
+/*#button{
     display: block;
-    background: #CDD728;
+    background: #566360;
     border-radius: 25px;
     height: 48px;
     width: 327px;
@@ -103,14 +106,55 @@ h1{
     font-size: 18px;
     color: #F4F4F4;
     outline: none;
-}
 
 #button:active{
     opacity: 0.6;
 }
 
+}*/
+
+.efeito{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 25px;
+    height: 48px;
+    width: 327px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 23px;
+    font-weight: bolder;
+    font-size: 18px;
+    color: #F4F4F4;
+    outline: none;
+    transition: all 400ms ease;
+}
+
+.efeito_opt{
+    background: #566360;
+}
+
+.efeito_opt::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 48px;
+    background: rgb(255,255,255, 0.3);
+    border-radius: 25px;
+    transition: all 2s ease;
+}
+.efeito_opt:hover::before{
+    width: 100%;
+}
+
+.efeito:active{
+    opacity: 0.6;
+}
+
+
 #container_2{
-    border: 1px solid #9657A5;
+    border: 1px solid #566360;
     border-radius: 4px;
     padding: 12px 0 12px 0;
     margin-right: 30px;

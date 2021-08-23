@@ -38,6 +38,16 @@ async function converterMoedas(){
         inputMoedas.innerHTML = valorPesos.toLocaleString('nl-NL', {style: 'currency', currency: 'ARS'})
     }
 
+    else if(select.value === "₲ Guarani"){
+        let valorPesos = inputReais / gua
+        inputMoedas.innerHTML = valorPesos.toLocaleString('es-PY', {style: 'currency', currency: 'PYG'})
+    }
+
+    else if(select.value === "元/¥ Renminbi"){
+        let valorPesos = inputReais / ren 
+        inputMoedas.innerHTML = valorPesos.toLocaleString('zh-Hans', {style: 'currency', currency: 'CNY'})
+    }
+
 
     
     inputMoedaReal.innerHTML = inputReais.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
@@ -63,7 +73,21 @@ function trocaMoeda(){
 
     else if(select.value === "$ Peso"){
         txtMoedas.innerHTML = "$ Peso"
-        bandMoedas.src = "./img2/arg.png"
+        bandMoedas.src = "./img/arg.png"
+
+        
+    }
+
+    else if(select.value === "₲ Guarani"){
+        txtMoedas.innerHTML = "₲ Guarani"
+        bandMoedas.src = "./img/paraguai.png"
+
+        
+    }
+
+    else if(select.value === "元/¥ Renminbi"){
+        txtMoedas.innerHTML = "元/¥ Renminbi"
+        bandMoedas.src = "./img/band_china.png"
 
         
     }
